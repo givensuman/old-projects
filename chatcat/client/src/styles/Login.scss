@@ -1,0 +1,136 @@
+$white: #E5E5E5;
+$black: #000000;
+$lightblue: #A4C2F7;
+$blue: #428DFF;
+$large: 5rem;
+$medium: 1.5rem;
+$small: 0.8rem;
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.title {
+    font-size: $large;
+}
+
+.anchor-tag {
+    text-decoration: none;
+    color: $blue;
+}
+
+.subtitle {
+    font-size: $medium;
+}
+
+.logo {
+    height: $large;
+    width: auto;
+}
+
+.heading {
+    margin-right: 100px;
+}
+
+.login-button {
+    background-color: $white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: solid 2px $lightblue;
+    &:hover {
+        background-color: $lightblue;
+        color: $black;
+        border-color: $blue;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: $white;
+    }
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.create-button {
+    background-color: $white;
+    width: fit-content;
+    color: $black;
+    border: solid 2px $lightblue;
+    margin-top: 20px;
+    &:hover {
+        background-color: $lightblue;
+        color: $black;
+        border-color: $blue;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: $white;
+        color: $black;
+    }
+}
+
+.form-div {
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.space {
+    margin-top: 8px;
+    margin-bottom: -2px;
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+@media all and (max-width: 1100px) {
+    .wrapper {
+        flex-direction: column!important;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10vw;
+    }
+    .heading {
+        margin-bottom: 50px;
+    }
+}
+
+@media all and (max-width: 515px) {
+    .login-button {
+        margin-right: 2%;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .heading {
+        font-size: .9rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .login-button {
+        margin-left: 10px;;
+    }
+
+    .wrapper {
+        padding-left: 10px;
+    }
+
+    .password-div {
+        max-width: 70vw;
+    }
+}

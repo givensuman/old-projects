@@ -1,0 +1,15 @@
+{
+  "name": "spotifriend",
+  "version": "1.0.0",
+  "description": "A web application for listening to music with friends",
+  "main": "server/index.js",
+  "repository": "https://github.com/givensuman/spotifriend",
+  "author": "Given Suman",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "(cd server && yarn dev);",
+    "kill": "npx kill-port 1337",
+    "initialize": "(cd server && yarn install); (cd client && yarn install);"
+  }
+}

@@ -1,0 +1,1 @@
+implement saving product (i.e. premium) to store

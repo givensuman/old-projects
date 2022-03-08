@@ -1,0 +1,38 @@
+{
+  "name": "spotifinder",
+  "version": "0.1.0",
+  "description": "spotifinder",
+  "main": "server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/givensuman/spotifinder"
+  },
+  "keywords": [],
+  "author": "Given Suman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/givensuman/spotifinder/issues"
+  },
+  "homepage": "https://github.com/givensuman/spotifinder#readme",
+  "engines": {
+    "node": "14.17.0"
+  },
+  "scripts": {
+    "client:install": "cd client && yarn",
+    "client": "cd client && yarn start",
+    "server": "node server",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server",
+    "heroku-postbuild": "cd client && npm install --production && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "cookie-parser": "1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "~4.17.1",
+    "querystring": "~0.2.0",
+    "request": "~2.88.0"
+  }
+}

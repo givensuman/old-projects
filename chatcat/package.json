@@ -1,0 +1,14 @@
+{
+  "name": "chatcat",
+  "version": "1.0.0",
+  "description": "private chat (for humans)",
+  "main": "./server/server.js",
+  "repository": "https://github.com/givensuman/chatcat.git",
+  "author": "Given Suman",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm install && node server.js"
+  }
+}

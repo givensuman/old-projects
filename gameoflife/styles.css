@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body, html, canvas {
+  margin: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -10;
+}
+
+.aligner {
+  height: auto;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  top: 3vh;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  z-index: 10;
+  width: 30vw;
+  min-width: 300px;
+
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+
+  /* transition-duration: .25s; */
+}
+
+.menu:hover {
+  visibility: visible;
+  position: relative;
+  top: 3vh;
+}
+
+.prompt {
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* margin-right: 40px; */
+}
+
+.overlay {
+  position: absolute;
+  left: 40%;
+  top: 100px;
+  width: 20%;
+  max-width: 500px;
+  z-index: 11;
+
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: none;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+
+  visibility: hidden;
+}
+
+.themes {
+  position: absolute;
+  left: 40%;
+  top: 100px;
+  width: 20%;
+  max-width: 500px;
+  z-index: 11;
+  margin-top: 10px;
+
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: none;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+
+  visibility: hidden;
+}
+
+.theme-item {
+  width: 100%;
+  border-style: solid;
+  margin: 5px;
+}
+
+.theme-item:hover {
+  color: white;
+  border-color: black;
+  cursor: pointer;
+}
+
+.space:hover {
+  background-color: black;
+}
+.ocean:hover {
+  background-color: #1466A8;
+}
+.desert:hover {
+  background-color: #FFF6BF;
+  color: black;
+}
+.forest:hover {
+  background-color: #18675D;
+}
+.mountain:hover {
+  background-color: #9E9E9E;
+}
+.tundra:hover {
+  background-color: white;
+  color: black; 
+}
+
+.x {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+
+  .overlay {
+    font-size: 0.8em;
+    max-width: 100vw;
+    width: 70vw;
+    position: relative;
+    left: 10vw;
+  }
+
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+a {
+  text-decoration: none;
+}

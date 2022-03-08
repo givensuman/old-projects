@@ -1,0 +1,41 @@
+{
+  "name": "spotifinder",
+  "version": "0.1.0",
+  "private": true,
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": "14.17.0"
+  },
+  "babelMacros": {
+    "styledComponents": {
+      "pure": true
+    }
+  },
+  "homepage": "https://spotifinderapp.herokuapp.com",
+  "proxy": "http://localhost:8888",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-plugin-macros": "^2.6.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-promise-tracker": "^2.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.1.1",
+    "react-spotify-web-playback": "^0.8.2",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6"
+  }
+}

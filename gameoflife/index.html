@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="aligner">
+        <div class="menu">
+            <p id="prompt" class="prompt">What is this?</p>
+            <span id="themes" class="prompt material-icons-outlined">palette</span>
+            <span id="refresh" class="prompt material-icons-outlined">refresh</span>
+        </div>
+        </div>
+        <div class="overlay">
+            <div class="x">X</div>
+            <span class="info">
+            The Game of Life was devised by British mathematician John Conway in the 1970s. <br />
+            It is a zero-player game featuring grid cells that are 'alive' or 'dead.' The rules of the game are simple:
+                <ul>
+                    <li>If a cell is alive, it will stay alive if it has only 2 or 3 live neighbors.</li>
+                    <li>If a cell is dead, it stays dead unless it has 3 live neighbors.</li>
+                </ul>
+            The game was originally designed on an infinite surface, but for the purposes of this illustrative app, 
+            it is set on a finite grid with a random starting configuration. <br />
+            You may see dynamic or stable structures emerge from the chaos. You can learn more about these and the game itself <a href="https://www.conwaylife.com/wiki/Main_Page">here.</a>
+            </span>
+        </div>
+        <div class="themes">
+            <div class="x">X</div>
+            <p>Pick your biome:</p>
+            <div class="theme-item space">&nbsp;&nbsp;Space  ✓</div>
+            <div class="theme-item ocean">&nbsp;&nbsp;Ocean</div>
+            <div class="theme-item desert">&nbsp;&nbsp;Desert</div>
+            <div class="theme-item forest">&nbsp;&nbsp;Forest</div>
+            <div class="theme-item mountain">&nbsp;&nbsp;Mountain</div>
+            <div class="theme-item tundra">&nbsp;&nbsp;Tundra</div>
+            
+        </div>
+        <canvas id="golCanvas">This app only works with modern browsers.</canvas>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
