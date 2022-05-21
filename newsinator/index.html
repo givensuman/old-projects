@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsinator</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body defer>
+    <div class='max-w-full h-screen flex flex-col justify-start items-center font-sans px-5'>
+        <!-- Animated News Scroll -->
+        <div class='ticker-wrap black z-10 invisible md:visible'>
+            <div class='ticker invisible md:visible'>
+                <div class='ticker__item'>BREAKING: Discord users are more informed than ever. More at 6.</div>
+                <div class='ticker__item'>BREAKING: Need for reliable and unbiased news greater than ever.</div>
+                <div class='ticker__item'>BREAKING: Newsinator bot improves server happiness 1000%.</div>
+                <div class='ticker__item'>TODO: Put a fourth thing. Oh no, is this thing still on?</div>
+            </div>
+        </div>
+        <!-- Title -->
+        <div class='w-full flex flex-row justify-center items-center mt-16 md:mt-24 lg:mt-32 mb-12 md:mb-18 lg:mb-24 pb-6 md:pb-8 lg:pb-12 border-b-2 border-gray-300  animate__animated animate__rubberBand'>
+            <img class='h-24 lg:h-100 w-auto rounded-full mr-5' src='./assets/logo.png' />
+            <h1 class='text-xl lg:text-5xl'>newsinator</h1>
+        </div>
+        <!-- First Card -->
+        <div class='max-w-screen-md flex flex-col md:flex-row animate__animated animate__bounceInLeft'>
+            <div class='flex flex-col items-center'>
+                <h1 class='text-xl md:text-2xl lg:text-3xl'>Get your news without leaving Discord</h1>
+                <ul class='text-base md:text-lg lg:text-xl ml-2 md:ml-4 lg:ml-8 mt-5'>
+                    <li>Just type <code>!news</code> to get started</li>
+                    <li>Free and easy to set up</li>
+                    <li>Gathers news in multiple languages</li>
+                    <li>Fast and real-time</li>
+                </ul>
+                <a href='https://discord.com/api/oauth2/authorize?client_id=884628721624035348&permissions=0&scope=bot' class='inline-block text-center p-2 lg:p-4 rounded-2xl text-base md:text-lg lg:text-xl m-2 md:m-4 lg:m-8 cursor-pointer blue hover:bg-blue-200 duration-200 transform hover:scale-105'>
+                    Get newsinator for your server
+                </a>
+            </div>
+            <img class='w-3/5 relative md:bottom-16' src='./assets/illustration_chatbot.svg' />
+        </div>
+        <!-- Second Card -->
+        <div class='max-w-screen-md justify-center items-center flex flex-col md:flex-row mt-6 md:mt-6 lg:mt-6 h-2/5 animate__animated animate__bounceInRight'>
+            <img class='h-2/5' src='./assets/illustration_newspaper.svg' />
+            <div class='flex flex-col'>
+                <h1 class='text-xl md:text-2xl lg:text-3xl'>Unbiased and open-source</h1>
+                <ul class='text-base md:text-lg lg:text-xl ml-2 md:ml-4 lg:ml-8 mt-5'>
+                    <li>Powered by the <a href='https://newsdata.io/' class='text-blue-800'>NewsData</a> API</li>
+                    <li>Has no preference for any media outlet</li>
+                    <li>Open-source code repository</li>
+                </ul>
+                <a href='https://github.com/givensuman/newsinator' class='max-w-sm text-center p-2 lg:p-4 rounded-2xl text-base md:text-lg lg:text-xl m-2 md:m-4 lg:m-8 cursor-pointer black text-gray-50 hover:bg-gray-500 duration-200 transform hover:scale-105'>
+                    Check out the GitHub
+                </a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class='w-full flex justify-center items-center pt-24 md:pt-12 lg:pt-0'>
+            <p class='text-base md:text-lg lg:text-xl mb-2 md:mb-4 lg:mb-8'>Made with 💙 by <a href='https://given.codes' class='text-blue-800'>Given Suman</a></p>
+        </div>
+    </div>
+</body>
+<style>
+* {
+    margin: 0;
+}
+
+.black {
+    background-color: #2F2E41;
+}
+
+.blue {
+    background-color: #5DE0E6;
+}
+
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    padding-left: 100%;
+    box-sizing: content-box;
+}
+
+.ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;  
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    overflow: hidden;
+
+    -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+        animation-name: ticker;
+    -webkit-animation-duration: 22s;
+            animation-duration: 22s;
+}
+
+.ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: white;   
+    overflow: hidden;
+}
+</style>
+</html>

@@ -1,0 +1,53 @@
+@import '@/_variables.scss';
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+    border-radius: 5px;
+  }
+
+   
+body::-webkit-scrollbar-thumb {
+    background-color: $accent2;
+    outline: none;
+}
+
+.dark {
+    color: $light;
+    background-color: $background;
+    --other: $light;
+
+    html::-webkit-scrollbar-track {
+        background-color: $background;
+    }
+}
+  
+.light {
+    color: $dark;
+    background-color: $lightbackground;
+    --other: black;
+
+    html::-webkit-scrollbar-track {
+        background-color: $lightbackground;
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
