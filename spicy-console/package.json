@@ -1,0 +1,26 @@
+{
+  "name": "spicy-console",
+  "version": "1.0.10",
+  "description": "Console logging with a touch of spice 🌶️",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinkoh/spicy-console"
+  },
+  "homepage": "spicy-console.netlify.app",
+  "keywords": [
+    "spicy",
+    "console",
+    "log",
+    "color",
+    "flair"
+  ],
+  "author": "Given Suman",
+  "license": "MIT",
+  "dependencies": {
+    "randomcolor": "^0.6.2"
+  }
+}
