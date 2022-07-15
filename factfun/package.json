@@ -1,0 +1,14 @@
+{
+  "name": "factfun",
+  "version": "1.0.1",
+  "description": "A CLI tool for printing fun facts during development",
+  "main": "index.js",
+  "repository": "https://www.github.com/givensuman/factfun",
+  "author": "givensuman",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "bin": {
+    "factfun": "./index.js"
+  }
+}

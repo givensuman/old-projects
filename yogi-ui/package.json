@@ -1,0 +1,37 @@
+{
+  "name": "yogi-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Given Suman",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "bulma": "^0.9.4",
+    "classnames": "^2.3.1",
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.5.6",
+    "@storybook/addon-essentials": "^6.5.6",
+    "@storybook/addon-interactions": "^6.5.6",
+    "@storybook/addon-links": "^6.5.6",
+    "@storybook/builder-webpack4": "^6.5.6",
+    "@storybook/manager-webpack4": "^6.5.6",
+    "@storybook/react": "^6.5.6",
+    "@storybook/testing-library": "^0.0.11",
+    "@types/react": "^18.0.10",
+    "@types/react-dom": "^18.0.5",
+    "babel-loader": "^8.2.5",
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.2",
+    "storybook-addon-sass-postcss": "^0.1.3",
+    "typescript": "^4.7.2"
+  },
+  "scripts": {
+    "make": "node ./scripts/make_component.js",
+    "dev": "start-storybook -p 4242 --quiet --disable-telemetry",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
